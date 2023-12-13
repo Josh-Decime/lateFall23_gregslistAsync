@@ -1,0 +1,40 @@
+<h1 class="text-center">Lets find you a shell Mr. Hermit-Crab</h1>
+<section class="container-fluid">
+    <section class="row">
+
+
+        <form onsubmit="app.HouseController.createHouse()" id="create-house-form"
+            class="d-none row justify-content-center bg-white mb-4"></form>
+        <div class="col-10 text-center fw-bold">
+            List your house today!
+        </div>
+        <div class="mb-2 col-4">
+            <label for="house-price">Price</label>
+            <input required class="form-control" type="number" id="house-price" name="price" placeholder="$500,000...">
+        </div>
+        <div class="mb-2 col-4">
+            <label for="house-beds">Bedrooms</label>
+            <input required class="form-control" type="number" id="house-beds" name="bedrooms" value="4">
+        </div>
+        <div class="mb-2 col-4">
+            <label for="house-bath">Bathroom</label>
+            <input required class="form-control" type="number" id="house-bath" name="Bathroom" value="3">
+        </div>
+        <div class="mb-2 col-4">
+            <label for="house-year">Year</label>
+            <input required class="form-control" type="number" id="house-year" name="year" value="2020">
+        </div>
+        <div class="mb-2 col-8">
+            <label for="house">Image Url of House</label>
+            <input required class="form-control" type="url" id="house-image" name="imgUrl">
+        </div>
+        <div class="mb-2 col-12">
+            <label for="house-description">Description</label>
+            <textarea name="description" id="house-description" rows="5" class="w-100 form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Create Listing <i class="mdi mdi-plus"></i></button>
+    </section>
+</section>
+<div id="houses-list" class="row">
+
+</div>
